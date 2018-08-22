@@ -1,0 +1,15 @@
+{
+  "name": "mtg-gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "clear && node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "markov-strings": "^1.5.0",
+    "tiny-json-http": "^7.0.0"
+  }
+}
