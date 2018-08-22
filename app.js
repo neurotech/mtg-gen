@@ -2,14 +2,14 @@ const fs = require("fs");
 const Markov = require("markov-strings");
 const tiny = require("tiny-json-http");
 
-const uri = "https://api.magicthegathering.io/v1/";
+const url = "https://api.magicthegathering.io/v1/";
 const cardsPath = "cards?page=";
 
 let cards = [];
 let i = 1;
 
 const getCards = i => {
-  tiny.get({ url: uri + cardsPath + i }, (err, res) => {
+  tiny.get({ url: url + cardsPath + i }, (err, res) => {
     if (err) return err;
 
     if (res.body.cards.length > 0) {
