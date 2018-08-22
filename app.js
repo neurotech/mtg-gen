@@ -16,8 +16,8 @@ const getCards = i => {
       res.body.cards.forEach(element => {
         cards.push({
           name: element.name,
-          flavor: element.flavor,
-          artist: element.artist
+          flavor: element.flavor || "",
+          artist: element.artist || ""
         });
       });
       console.log(`Captured page ${i}.`);
