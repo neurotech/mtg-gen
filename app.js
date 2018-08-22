@@ -1,5 +1,5 @@
 const fs = require("fs");
-const brain = require("brain.js");
+const Markov = require("markov-strings");
 const tiny = require("tiny-json-http");
 
 const uri = "https://api.magicthegathering.io/v1/";
