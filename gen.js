@@ -12,11 +12,6 @@ markovFlavours.buildCorpusSync();
 markovTexts.buildCorpusSync();
 markovArtists.buildCorpusSync();
 
-const newName = markovNames.generateSentenceSync();
-const newFlavour = markovFlavours.generateSentenceSync();
-const newText = markovTexts.generateSentenceSync();
-const newArtist = markovArtists.generateSentenceSync();
-
 console.log(
   markovNames.generateSentenceSync().string +
     "\n" +
